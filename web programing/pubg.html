@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy/Sell PUBG UC</title>
+  </head>
+  <body>
+    <h1>Welcome to our Buy/Sell PUBG UC page</h1>
+
+    <h2>Buy UC</h2>
+    <form action="process-buy.php" method="post">
+      <label for="uc-quantity">Enter the quantity of UC you want to buy:</label>
+      <input type="number" name="uc-quantity" id="uc-quantity" required />
+      <br />
+      <label for="payment-method">Select your payment method:</label>
+      <select name="payment-method" id="payment-method" required>
+        <option value="">Select Payment Method</option>
+        <option value="paypal">Paypal</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="net-banking">Net Banking</option>
+      </select>
+      <br />
+      <button type="submit">Buy UC</button>
+    </form>
+
+    <h2>Sell UC</h2>
+    <form action="process-sell.php" method="post">
+      <label for="uc-quantity"
+        >Enter the quantity of UC you want to sell:</label
+      >
+      <input type="number" name="uc-quantity" id="uc-quantity" required />
+      <br />
+      <label for="payment-method">Select your payment method:</label>
+      <select name="payment-method" id="payment-method" required>
+        <option value="">Select Payment Method</option>
+        <option value="paypal">Paypal</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="net-banking">Net Banking</option>
+      </select>
+      <br />
+      <button type="submit">Sell UC</button>
+    </form>
+  </body>
+</html>
